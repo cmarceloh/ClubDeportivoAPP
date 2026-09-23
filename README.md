@@ -4,6 +4,10 @@ Aplicación Android para la gestión operativa de un club deportivo.
 
 ![Logo del club](logo_club.png)
 
+## Descripción
+
+ClubDeportivo es una app Android orientada a la administración y gestión diaria de un club deportivo. Permite gestionar socios, no socios, actividades, pagos, profesores, suplencias, nutrición y listados operativos desde una única solución móvil.
+
 ## Funcionalidades
 
 - Gestión de socios y no socios.
@@ -14,18 +18,20 @@ Aplicación Android para la gestión operativa de un club deportivo.
 - Módulo de nutrición.
 - Listados de socios, no socios, actividades, pagos, inscripciones, profesores y morosos.
 
-## Versiones y requisitos
+## Requisitos y versiones
 
-Las versiones verificadas en el código del proyecto son:
+Las versiones verificadas en el proyecto son:
 
-- Gradle Wrapper: `9.3.1` (`gradle/wrapper/gradle-wrapper.properties`).
-- Android Gradle Plugin: `9.1.0` (`gradle/libs.versions.toml`).
-- Compile SDK: Android `36.1`.
-- Target SDK: Android `36`.
-- Minimum SDK: Android `7.0` (API `24`).
-- Java para compilar el código: `11`.
-- JDK configurado en Android Studio: `jbr-21`.
-- Android Studio: Iguana.
+- Gradle Wrapper: `9.3.1` (`gradle/wrapper/gradle-wrapper.properties`)
+- Android Gradle Plugin: `9.1.0` (`gradle/libs.versions.toml`)
+- Compile SDK: Android `36.1`
+- Target SDK: Android `36`
+- Minimum SDK: Android `7.0` (API `24`)
+- Compatibilidad de compilación JVM: `Java 11`
+- JDK configurado en Android Studio: `jbr-21`
+- Android Studio: `Iguana`
+
+> El proyecto está desarrollado en Kotlin. La referencia a Java 11 corresponde a la compatibilidad de compilación de JVM configurada por Gradle, no al lenguaje principal de la app.
 
 ## Ejecutar el proyecto
 
@@ -48,19 +54,20 @@ En Windows:
 
 El APK de depuración se genera en `app/build/outputs/apk/debug/`.
 
-## Tecnología
+## Tecnologías
 
+- Kotlin como lenguaje principal de la aplicación.
 - Kotlin DSL para la configuración de Gradle.
-- Java 11.
-- Gradle Wrapper 9.3.1.
-- Android Gradle Plugin 9.1.0.
+- Compatibilidad de compilación JVM: Java 11.
+- Gradle Wrapper `9.3.1`.
+- Android Gradle Plugin `9.1.0`.
 - Android SDK con `minSdk 24` y `targetSdk 36`.
 - AndroidX y Material Components.
 - ConstraintLayout.
 - Navigation Component.
 - View Binding.
 
-## Estructura
+## Estructura del proyecto
 
 - `app/src/main/java`: actividades y lógica de la aplicación.
 - `app/src/main/res/layout`: diseños de las pantallas y diálogos.
